@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Undangan pernikahan Aksara Nareswara dan Jenar Aruna Kirana."
+    >
+
+    <title>Aksara & Jenar — Wedding Invitation</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- OPENING -->
+    <!-- ============================= -->
+
+    <section
+        id="opening"
+        class="opening"
+    >
+        <div class="opening-overlay"></div>
+
+        <div class="opening-content">
+
+            <p class="eyebrow">
+                THE WEDDING OF
+            </p>
+
+            <h1>
+                Aksara
+                <span>&</span>
+                Jenar
+            </h1>
+
+            <p class="opening-date">
+                17 · 09 · 2026
+            </p>
+
+            <button
+                id="openInvitation"
+                class="btn btn-primary"
+                type="button"
+            >
+                Buka Undangan
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- MAIN -->
+    <!-- ============================= -->
+
+    <main
+        id="mainContent"
+        class="main-content"
+        aria-hidden="true"
+    >
+
+        <!-- MUSIC CONTROL -->
+
+        <button
+            id="musicToggle"
+            class="music-control"
+            type="button"
+            aria-label="Matikan musik"
+            aria-pressed="true"
+        >
+            <span id="musicIcon">♪</span>
+        </button>
+
+        <!-- HERO -->
+
+        <section class="hero section">
+
+            <div class="section-inner reveal">
+
+                <p class="eyebrow olive">
+                    A MOMENT TO REMEMBER
+                </p>
+
+                <h2 class="couple-name">
+                    Aksara
+                    <span>&</span>
+                    Jenar
+                </h2>
+
+                <p class="hero-text">
+                    Dengan penuh kebahagiaan, kami mengundang
+                    Anda untuk menjadi bagian dari hari istimewa
+                    kami.
+                </p>
+
+                <div class="gold-line"></div>
+
+                <p class="date-display">
+                    17 September 2026
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PARENTS -->
+
+        <section class="parents section">
+
+            <div class="section-inner">
+
+                <div class="section-heading reveal">
+
+                    <p class="eyebrow">
+                        WITH THE BLESSING OF
+                    </p>
+
+                    <h2>
+                        Keluarga Kami
+                    </h2>
+
+                </div>
+
+                <div class="parents-grid">
+
+                    <article class="parent-card reveal">
+
+                        <p class="parent-label">
+                            Putra dari
+                        </p>
+
+                        <h3>
+                            Aksara Nareswara
+                        </h3>
+
+                        <p>
+                            Bapak Ali Wijaya Pradana
+                            <br>
+                            &amp;
+                            <br>
+                            Ibu Afifah Ayu Kusumawardani
+                        </p>
+
+                    </article>
+
+                    <article class="parent-card reveal">
+
+                        <p class="parent-label">
+                            Putri dari
+                        </p>
+
+                        <h3>
+                            Jenar Aruna Kirana
+                        </h3>
+
+                        <p>
+                            Bapak Ramadhan Jayeningrat
+                            <br>
+                            &amp;
+                            <br>
+                            Ibu Risa Ayuningtyas
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DETAILS -->
+
+        <section class="details section">
+
+            <div class="section-inner">
+
+                <div class="section-heading reveal">
+
+                    <p class="eyebrow">
+                        SAVE THE DATE
+                    </p>
+
+                    <h2>
+                        Wedding Details
+                    </h2>
+
+                </div>
+
+                <div class="event-card reveal">
+
+                    <p class="event-label">
+                        THE CEREMONY
+                    </p>
+
+                    <h3>
+                        17 September 2026
+                    </h3>
+
+                    <p class="event-time">
+                        09.15 — selesai
+                    </p>
+
+                    <div class="gold-line"></div>
+
+                    <p class="event-location">
+                        Panggung<br>
+                        SMA Negeri 1 Kalasan
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COUNTDOWN -->
+
+        <section class="countdown-section section">
+
+            <div class="section-inner reveal">
+
+                <p class="eyebrow">
+                    UNTIL WE CELEBRATE
+                </p>
+
+                <h2>
+                    Counting the Days
+                </h2>
+
+                <div
+                    id="countdown"
+                    class="countdown"
+                >
+
+                    <div class="count-item">
+                        <strong id="days">00</strong>
+                        <span>Days</span>
+                    </div>
+
+                    <div class="count-item">
+                        <strong id="hours">00</strong>
+                        <span>Hours</span>
+                    </div>
+
+                    <div class="count-item">
+                        <strong id="minutes">00</strong>
+                        <span>Minutes</span>
+                    </div>
+
+                    <div class="count-item">
+                        <strong id="seconds">00</strong>
+                        <span>Seconds</span>
+                    </div>
+
+                </div>
+
+                <p
+                    id="eventPassed"
+                    class="event-passed hidden"
+                >
+                    Acara telah berlangsung.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOCATION -->
+
+        <section class="location section">
+
+            <div class="section-inner">
+
+                <div class="section-heading reveal">
+
+                    <p class="eyebrow">
+                        FIND US
+                    </p>
+
+                    <h2>
+                        The Location
+                    </h2>
+
+                </div>
+
+                <div class="location-card reveal">
+
+                    <div class="location-mark">
+                        ◎
+                    </div>
+
+                    <h3>
+                        Panggung SMA Negeri 1 Kalasan
+                    </h3>
+
+                    <p>
+                        SMA Negeri 1 Kalasan
+                    </p>
+
+                    <a
+                        class="btn btn-outline"
+                        href="https://www.google.com/maps/search/?api=1&query=Panggung+SMA+Negeri+1+Kalasan"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Buka Google Maps
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RSVP -->
+
+        <section class="rsvp section">
+
+            <div class="section-inner">
+
+                <div class="section-heading reveal">
+
+                    <p class="eyebrow">
+                        YOUR PRESENCE
+                    </p>
+
+                    <h2>
+                        Konfirmasi Kehadiran
+                    </h2>
+
+                    <p>
+                        Mohon konfirmasikan kehadiran Anda
+                        untuk membantu kami mempersiapkan
+                        hari istimewa ini.
+                    </p>
+
+                </div>
+
+                <form
+                    id="rsvpForm"
+                    class="form-card reveal"
+                >
+
+                    <label for="rsvpName">
+                        Nama
+                    </label>
+
+                    <input
+                        id="rsvpName"
+                        name="name"
+                        type="text"
+                        maxlength="80"
+                        autocomplete="name"
+                        placeholder="Nama Anda"
+                        required
+                    >
+
+                    <fieldset>
+
+                        <legend>
+                            Konfirmasi Kehadiran
+                        </legend>
+
+                        <label class="radio-option">
+
+                            <input
+                                type="radio"
+                                name="status"
+                                value="Hadir"
+                                required
+                            >
+
+                            <span>Hadir</span>
+
+                        </label>
+
+                        <label class="radio-option">
+
+                            <input
+                                type="radio"
+                                name="status"
+                                value="Tidak hadir"
+                            >
+
+                            <span>Tidak hadir</span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <button
+                        class="btn btn-primary"
+                        type="submit"
+                    >
+                        Kirim Konfirmasi
+                    </button>
+
+                    <p
+                        id="rsvpMessage"
+                        class="form-message"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- GUEST WISHES -->
+
+        <section class="wishes section">
+
+            <div class="section-inner">
+
+                <div class="section-heading reveal">
+
+                    <p class="eyebrow">
+                        DIGITAL GUESTBOOK
+                    </p>
+
+                    <h2>
+                        Guest Wishes
+                    </h2>
+
+                    <p>
+                        Tinggalkan doa dan ucapan terbaik
+                        untuk Aksara &amp; Jenar.
+                    </p>
+
+                </div>
+
+                <form
+                    id="wishForm"
+                    class="form-card reveal"
+                >
+
+                    <label for="wishName">
+                        Nama
+                    </label>
+
+                    <input
+                        id="wishName"
+                        name="name"
+                        type="text"
+                        maxlength="80"
+                        autocomplete="name"
+                        placeholder="Nama Anda"
+                        required
+                    >
+
+                    <label for="wishText">
+                        Ucapan
+                    </label>
+
+                    <textarea
+                        id="wishText"
+                        name="wish"
+                        maxlength="500"
+                        rows="5"
+                        placeholder="Tuliskan ucapan Anda..."
+                        required
+                    ></textarea>
+
+                    <div class="character-count">
+                        <span id="wishCount">0</span>/500
+                    </div>
+
+                    <button
+                        class="btn btn-primary"
+                        type="submit"
+                    >
+                        Kirim Ucapan
+                    </button>
+
+                    <p
+                        id="wishMessage"
+                        class="form-message"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+
+                <div
+                    id="wishesList"
+                    class="wishes-list"
+                    aria-live="polite"
+                >
+                    <div class="wishes-loading">
+                        Memuat ucapan...
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+            <div class="section-inner">
+
+                <p class="eyebrow">
+                    A &amp; J
+                </p>
+
+                <h2>
+                    Aksara &amp; Jenar
+                </h2>
+
+                <p>
+                    17 September 2026
+                </p>
+
+                <div class="gold-line"></div>
+
+                <small>
+                    With love and gratitude.
+                </small>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <!-- MUSIC -->
+
+    <audio
+        id="weddingMusic"
+        loop
+        preload="none"
+    >
+        <source
+            src="assets/music/wedding.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
