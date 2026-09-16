@@ -133,7 +133,7 @@ openInvitation.addEventListener(
              * Jika browser tetap menolak audio,
              * website tetap berjalan normal.
              */
-
+            console.error("Musik gagal:", error);
             updateMusicControl(false);
 
         }
