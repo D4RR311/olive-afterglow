@@ -126,6 +126,7 @@ openInvitation.addEventListener(
             weddingMusic.volume = 1.0;
             await weddingMusic.play();
             updateMusicControl(true);
+           console.log("Musik berhasil diputar.");
 
         } catch (error) {
 
@@ -134,6 +135,8 @@ openInvitation.addEventListener(
              * website tetap berjalan normal.
              */
             console.error("Musik gagal:", error);
+            console.error("Audio source:", weddingMusic.currentSrc);
+            console.error("Audio error:", weddingMusic.error);
             updateMusicControl(false);
 
         }
