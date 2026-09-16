@@ -134,7 +134,6 @@ openInvitation.addEventListener(
              * website tetap berjalan normal.
              */
             console.error("Musik gagal:", error);
-            console.error("console.error("Audio source:", weddingMusic.currentSrc);
             updateMusicControl(false);
 
         }
