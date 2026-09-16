@@ -8,7 +8,7 @@
 const CONFIG = {
 
     APPS_SCRIPT_URL:
-        "https://script.google.com/macros/s/AKfycbxUnfteSZXvkX3ylA6MZ81XLhvm9F1z_xbJCoILgAJkL19A7upvuC5YPKLg_enGPuTvGA/exec",
+        "https://script.google.com/macros/s/AKfycbwPXW5AvSBgqCzTY1tRq18LVu73UqN4Y_lDIsi1sM2FoYbUNhomoEvheI3uNwLFeOhl6w/exec",
 
     WEDDING_DATE:
         "2026-09-17T09:15:00+07:00",
