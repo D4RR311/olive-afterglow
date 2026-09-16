@@ -195,7 +195,7 @@ musicToggle.addEventListener(
 
             } catch (error) {
 
-                updateMusicControl(false);
+console.error("Musik gagal diputar:", error);                updateMusicControl(false);
 
             }
 
